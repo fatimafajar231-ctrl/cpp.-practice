@@ -1,0 +1,16 @@
+/* A local variable is declared inside a function or block and can be accessed only within that block 
+   A global variable is declared outside aa function and can be accessed from any function in the program */
+
+   #include<iostream>
+   using namespace std;
+   int x;  //global variable. if not assigned it is automatically 0
+   int main()
+   {
+    int y;  //local variabel. if not assigned it is automaticaly a garbage value
+
+    cout<<x<<endl;
+    cout<<y<<endl;
+
+    return 0;
+
+   }
