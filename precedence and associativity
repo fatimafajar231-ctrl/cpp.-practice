@@ -1,19 +1,19 @@
 /* a++, a-- have highest precedence, then ++a, --a, then /, *, %, then +, -.
    Associativity: ++a, --a are right-to-left; all others are left-to-right */
 
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 int main() {
     // First expression
     int a = 4;
     int b = a++ + ++a * 2;
-    cout << "First expression: a = " << a << ", b = " << b << endl;
+    cout<<"First expression: a = " << a << ", b = " << b << endl;
 
     // Second expression
     a = 1;  // Reset a
     b = a++ + a++ + --a;
-    cout << "Second expression: a = " << a << ", b = " << b << endl;
+    cout<<"Second expression: a = " << a << ", b = " << b << endl;
 
     return 0;
 }
