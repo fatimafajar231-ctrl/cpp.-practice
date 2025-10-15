@@ -14,6 +14,19 @@ int main()
         cout<<i<<""  ;
         i++;
     }
+
+    int pin;
+    cout << "Enter PIN: "; // Initial prompt
+    cin >> pin;
+
+    while (pin != 9999)
+    {
+        cout << "Incorrect PIN" << endl;
+        cout << "Enter PIN again: ";
+        cin >> pin;
+    }
+    cout << "Correct PIN" << endl;
+    
     return 0;
 
 }
