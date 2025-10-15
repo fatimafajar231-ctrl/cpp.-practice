@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int marks;
+    cout << "Enter marks (0-100): "; // Prompt user for input
+    cin >> marks;
+
+    // Input validation (optional but recommended)
+    if (marks < 0 || marks > 100) {
+        cout << "Invalid marks! Please enter a value between 0 and 100." << endl;
+    } else {
+        if (marks >= 90) {
+            cout << "Grade A" << endl;
+        } else if (marks >= 80) {
+            cout << "Grade B" << endl;
+        } else if (marks >= 70) {
+            cout << "Grade C" << endl;
+        } else {
+            cout << "Grade D" << endl;
+        }
+    }
+
+    return 0;
+}
