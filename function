@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+//syntax
+//returnTypefuntionName(parameters){
+//funtion body
+//return result;
+//}
+
+int add(int a, int b)
+{
+    return a+b;
+}
+ 
+void fun1()
+{
+    cout<<"hello";
+}
+
+int main()
+{
+    fun1();
+
+    int sum= add(5,3);
+    cout<<sum;
+    
+    return 0;
+
+}
