@@ -1,0 +1,36 @@
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    double balance = 10000.0; // Example initial balance
+    double dailylimit = 5000.0; // Example daily withdrawal limit
+    double amount;
+
+    cout << "Enter withdrawal amount: ";
+    cin >> amount;
+
+    // Input validation
+    if (cin.fail() || amount < 0) {
+        cout << "Invalid input! Please enter a non-negative number." << endl;
+    } else {
+        if (amount <= balance) {
+            if (amount <= dailylimit) {
+                if (amount > 0 && amount % 100 == 0) {
+                    cout << "Withdraw successfully" << endl;
+                    balance -= amount; // Update balance (optional)
+                    cout << "New balance: " << balance << endl;
+                } else {
+                    cout << "Amount must be a positive multiple of 100" << endl;
+                }
+            } else {
+                cout << "Exceeds daily limit" << endl;
+            }
+        } else {
+            cout << "Insufficient balance" << endl;
+        }
+    }
+
+    return 0;
+}
