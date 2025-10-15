@@ -1,6 +1,3 @@
-/* a++, a-- have highest precedence, then ++a, --a, then /, *, %, then +, -.
-   Associativity: ++a, --a are right-to-left; all others are left-to-right */
-
 #include<iostream>
 using namespace std;
 

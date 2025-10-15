@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    // if statement
+    int num = 10; // This is fine
+    if(num > 0)
+        cout << "number is positive" << endl; // Added endl for better output formatting
+
+    // if-else statement
+    int num2 = 4; // Changed variable name to avoid redefinition
+    if(num2 % 2 == 0)
+        cout << "Even" << endl;
+    else // Removed semicolon after else
+        cout << "Odd" << endl;
+
+    return 0;
+}
