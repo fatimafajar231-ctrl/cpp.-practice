@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+//call by value copies the value from actual parameters to the formal parameters
+//call by reference we actually pass the address not value
+//parameters in main are actual parameters and parameters in funtion are formal parameters
+
+void test(int &x, int y)
+{
+    x += 5;
+    y *= 2;
+    cout<<x<<y;
+}
+
+void test1(int *x, int y)
+{
+    *x += 5; //chsnge value at address(modifies original 'a')
+    y *= 2;  //change local copy(does not modifies 'b')
+    cout<<x<<y;
+}
+
+int main()
+{
+    int a =3, b = 4;
+    test(a, b);
+    cout<<a<<b;
+
+    test1(&a, b); //pass address of a and value of b
+    cout<<a<<b;
+
+    return 0;
+}
