@@ -1,0 +1,20 @@
+/*
+ int arr [5] = {10, 20, 30, 40, 50}
+int *p = arr; 
+cout<<*(p+1);
+cout<<*p++;
+cout<<*++p;
+cout<<*--p;
+
+int*start = &arr[1];
+int*end = &arr[4];
+int diff = end - start;
+
+&arr = arr[0]
+p++ increment in address
+
+*p++ *p-- first print then inc/dec
+
+*++p *--p first inc/dec then print
+*/
+
