@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+// Static memory allocation
+void fun1() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    cout << "Static array element at index 2: " << arr[2] << endl;
+}
+
+// Dynamic memory allocation
+void fun2() {
+    int n;
+    cout << "Enter the size of the dynamic array: ";
+    cin >> n;
+
+    // Validate input
+    if (n <= 0) {
+        cout << "Invalid array size!" << endl;
+        return;
+    }
+
+    int* ptr = new int[n];
+    for (int i = 0; i < n; i++) {
+        ptr[i] = i; // Assign values 0 to n-1
+    }
+
+    // Print the array
+    cout << "Dynamic array elements: ";
+    for (int i = 0; i < n; i++) {
+        cout << ptr[i] << " ";
+    }
+    cout << endl;
+
+    delete[] ptr; // Deallocate memory
+    ptr = nullptr; // Set to nullptr for safety
+}
+
+int main() {
+    fun1(); // Call static allocation function
+    fun2(); // Call dynamic allocation function
+
+    return 0;
+}
