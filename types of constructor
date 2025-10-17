@@ -1,0 +1,26 @@
+// default constructor
+
+class Student{
+    int roll;
+    public:
+    Student(){
+        roll=10;
+        cout<<roll<<end1;
+    }
+};
+int main(){
+    Student s1,s2
+}
+
+// Parametrized constructor
+
+class Student{
+    int roll;
+    public:
+    Student(int r){
+        roll=r;
+    }
+};
+int main(){
+    Student s1(101), s2(201);
+}
