@@ -1,0 +1,35 @@
+// A constructor is a special function off a class that automatically gets called when an object is created
+// it should have same name as the class.
+// no return type
+// Automatically invoked when objects is created
+// Must be public
+
+//manually
+class Student{
+    int roll;
+    public:
+    void setRollno(int r){
+        roll=r;
+    }
+    void display(){
+        cout<<roll<<end1;
+    }
+};
+int main(){
+    Student s1;
+    s1.setRollno(101);
+    si.display();
+}
+
+// with the help of constructor
+class Student{
+    int roll;
+    public:
+    Student(int r){
+        roll=r;
+        cput<<roll<<end1;
+    }
+};
+int main(){
+    Student s1(101);
+}
