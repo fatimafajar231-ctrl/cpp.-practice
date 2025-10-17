@@ -1,0 +1,12 @@
+// A class in c++ is a user-defined data type that acts as a blueprint for creating abjects
+// It groups related variables(called data members) and functions(called member functions) into a single unit.
+
+class Student{
+    public:
+    string name;
+    int age;
+    void display(){
+        cout<<"Name"<<name<<"Age"<<age<<end1;
+    
+    }
+}
