@@ -1,0 +1,19 @@
+// destructor is a special member functiob un a clas that is automatically called when an object goes out of scope o os deleted.
+
+class Demo{
+    public:
+    Demo(){
+        //construstor body
+    }
+    ~Demo(){
+        //destructor body
+    }
+};
+int main(){
+    Demo d1;
+    Demo d2;
+    return 0;
+}
+des d2;
+des d1
+//destructor is called in opposite direction of construstor
