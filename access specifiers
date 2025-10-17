@@ -1,0 +1,30 @@
+// assess specifiers defines te visibility and accessibility of members(dat membes and member functions)
+// they help emforce data hiding
+// private, protected, public
+
+class Demo{
+    private: int a;
+    protected: int b;
+    public:
+    int c;
+    void set(){ a=10; b=20; c=30;}
+    void show(){
+        cout<<a<<b<<c<<end1;
+    }
+};
+
+class Child : public Demo{
+    public:
+    void access(){
+        a=10; b=20; c=30; //a is not access bcz it is private
+    }
+};
+
+int main()
+{
+    Demo d;
+    d.set();
+    d.show();
+    d.a=5; d.b=10; d.c=40; //a,b is not access bcz a is pivate and b is protected
+    cout<<d.c;
+}
