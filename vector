@@ -1,0 +1,23 @@
+#include<vector>
+
+//vector is a dynamic array from the STL that automatically resizes when you add or emove elements.
+//in vector when we add a new element and array is full then a new memory of double then previous size is formed
+
+int main()
+{
+    vector<int> v = {10, 20, 30};
+    cout<<v.size(); //number of elements
+    cout<<v.capacity(); //max element hold
+    v.push_back(40);
+    cout<<v.size();
+    cout<<v.capacity();
+
+}
+
+v.push_back() //add element at end
+v.pop_back() //remove last element
+v.size() //number of elements
+v.clear() //remove all elements
+v.front() //first element
+v.back()  //last element
+v.empty() //return true if empty
