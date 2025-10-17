@@ -1,0 +1,28 @@
+// A friend class is a special class that can access privat and protected member of another class
+
+class X{
+    private:
+    int a=5;
+    friend class Y;
+};
+
+class Y{
+    public:
+    void show(X obj){
+        cout<<obj.a<<end1;
+    }
+};
+
+// A friend function is special functin that can access private and protectd members.
+// A fiend funtion can be a:
+// 1 Global function
+// A function/method of another class
+
+class Box{
+    int length=10;
+    friend voidshow(Box);
+}
+
+void show(Box a){
+    cout<<alength<<end1;
+}
