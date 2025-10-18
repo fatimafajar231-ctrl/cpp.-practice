@@ -1,0 +1,38 @@
+// polymorphism in oop means "many form" the ability of one function, operator, or object to behave differently
+//based on the contaxt.
+//types 
+//compile time polymorphism(function overloading & operator overloading)
+//run time polymorphism(function overriding & virtual overloading)
+
+//funtion overloading
+
+class Print{
+    public:
+    void display(int x){
+        cout<<x;
+    }
+    void display(double y){
+        cout<<y;
+    }
+};
+int main(){
+    print obj;
+    obj.display(10);
+    obj.display(12.5);
+}
+
+
+class Print{
+    public:
+    void display(int x){
+        cout<<x;
+    }
+    void display(int s, int y){
+        cout<<s<<y;
+    }
+};
+int main(){
+    print obj;
+    obj.display(10);
+    obj.display(15, 20);
+}
