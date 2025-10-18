@@ -1,0 +1,25 @@
+// inheritence is a mechanism in oop that allows one class(derived/child) to acruire the properties & behaviour
+//(data members & member functions) of another class(base/ parent).
+
+class Base{
+    //member of base class
+};
+class Derived : visibility_mode Base{
+    //members of derived class
+};
+
+
+class Parent{
+    public:
+    int car;
+    protected:
+    int money;
+    private:
+    int secret;
+};
+class Child : public Parnts
+{
+
+};
+int main()
+Child ob1;
