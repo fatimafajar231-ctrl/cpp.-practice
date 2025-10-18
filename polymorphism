@@ -36,3 +36,23 @@ int main(){
     obj.display(10);
     obj.display(15, 20);
 }
+
+//method overriding
+
+class A{
+    public:
+    void show(){
+        cout<<"I am base";
+    }
+};
+class B : public A{
+    public:
+    void show(){
+        cout<<"I am derived";
+    }
+};
+int main(){
+    B b1, b2
+    b1.show(); //show from derived class run this is overriding 
+    b2.A::show() //show from base class run
+}
