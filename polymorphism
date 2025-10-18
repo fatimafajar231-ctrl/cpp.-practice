@@ -56,3 +56,24 @@ int main(){
     b1.show(); //show from derived class run this is overriding 
     b2.A::show() //show from base class run
 }
+
+//virtual function
+
+class Base{
+    public:
+    virtual void show(){
+        cout<<"show base";
+    }
+};
+class Derived : public Base{
+    public:
+    void show(){
+        cout<<"Derived show";
+    }
+};
+int main(){
+    Base ptr;
+    Derived d;
+    ptr = &d;
+    ptr ->show(); //it show from derived class if virtual not written then show from base class 
+}
