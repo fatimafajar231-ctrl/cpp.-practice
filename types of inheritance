@@ -1,0 +1,45 @@
+// single inheritance
+
+class Base{
+    public:
+    int add(int a, int b){
+        return a+b;
+    }
+};
+class Derived : private Base{
+    public:
+    int f1(int a, int b){
+        return add(a,b);
+    }
+};
+int main(void){
+    Derived b1;
+    cout<<b1.f1(2,3)
+}
+
+
+//multiple inheritance
+
+class A{
+    public:
+    void show(){
+        cout<<"show A"<<end1;
+    }
+};
+class B{
+    punlic:
+    void show(){
+        cout<<"show B"<<end1;
+    }
+}:
+class C :public A, public b{
+    public:
+    void show(){
+        A::show()
+    }
+};
+int main(){
+    C.obj;
+    C::obj.show
+    A::obj.show
+}
