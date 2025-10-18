@@ -1,0 +1,33 @@
+class Student{
+    public:
+    int roll;
+    string name;
+};
+int main(){
+    Studnt s1;
+    s1.roll=101;
+    s1.name="Amit";
+    Student s2=s1; / Student s2(s1);
+    cout<<s2.roll<<s2.name;
+}
+
+
+
+class Student{
+    private:
+    int roll;
+    sting name;
+    public:
+    Student(int r, sring n){
+        roll = r;
+        name = n;
+    }
+    Student(const Student &s){
+        roll = s.roll;
+        name = " ";
+    }
+};
+int main(){
+    Student s1(101, "Amit");
+    Student s2 = s1;
+}
